@@ -6,13 +6,12 @@ p {
 .eye {
   border: none;
   outline: none;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
+  border: 10px solid #003557;
   border-radius: 50%;
-  background-color: brown;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #96d9ff;
+  transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
 }
 
 .eye:hover {
@@ -20,11 +19,4 @@ p {
   cursor: pointer;
   border-color: #003557;
   transform: scale(1.2, 1.2);
-}
-
-.eye-boll {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  background-color: orange;
 }
