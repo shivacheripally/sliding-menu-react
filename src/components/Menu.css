@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffe600;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
@@ -12,13 +12,11 @@
 
 #menu.hide {
   transform: translate3d(-100vw, 0, 0);
-  background-color: red;
 }
 
 #menu.show {
   transform: translate3d(0vw, 0, 0);
   overflow: hidden;
-  background-color: green;
 }
 
 #menu h2 a {

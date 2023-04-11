@@ -6,8 +6,9 @@ p {
 .eye {
   border: none;
   outline: none;
-  height: 35px;
-  width: 35px;
+  z-index: 999999;
+  height: 40px;
+  width: 40px;
   border: 10px solid #003557;
   border-radius: 50%;
   background-color: #96d9ff;

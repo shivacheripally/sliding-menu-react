@@ -5,15 +5,14 @@ import MenuButton from './MenuButton.js';
 function App() {
   const [visible, setVisible] = useState(false);
 
-  const handleClick = () => {
-    console.log('visible', visible);
+  const handleClick = (e) => {
     setVisible(!visible);
-    // e.stopPropagation();
+    e.stopPropagation();
   };
   return (
     <>
-      <MenuButton clickEvent={handleClick} menuVisibility={visible} />
-      <Menu clickEvent={handleClick}/>
+      <MenuButton clickEvent={handleClick} />
+      <Menu menuVisibility={visible} clickEvent={handleClick}/>
 
       <div>
         <div className="list">
